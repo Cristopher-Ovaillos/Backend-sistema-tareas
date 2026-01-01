@@ -22,6 +22,12 @@ instalacion y uso:
                 id: 4 ('Usuario 4', 'user4@test.com', 'estandar'),
                 id: 5 ('Usuario 5', 'user5@test.com', 'estandar')
 ```
+
+para agregar mas es escribir en la terminal
+
+  - sqlite3 sistema.db
+  - se abre la terminal de sqlite: usar instrucciones sql para insertar.
+
 ---
 
 la base de datos se crea sola en development/db.js
