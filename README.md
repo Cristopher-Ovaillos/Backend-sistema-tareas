@@ -16,11 +16,11 @@ instalacion y uso:
 
 **Ejemplo de usuarios a probar:**
 ```
-                ('Usuario 1', 'user1@test.com', 'administrador'),
-                ('Usuario 2', 'user2@test.com', 'estandar'),
-                ('Usuario 3', 'user3@test.com', 'estandar'),
-                ('Usuario 4', 'user4@test.com', 'estandar'),
-                ('Usuario 5', 'user5@test.com', 'estandar')
+                id: 1 ('Usuario 1', 'user1@test.com', 'administrador'),
+                id: 2 ('Usuario 2', 'user2@test.com', 'estandar'),
+                id: 3 ('Usuario 3', 'user3@test.com', 'estandar'),
+                id: 4 ('Usuario 4', 'user4@test.com', 'estandar'),
+                id: 5 ('Usuario 5', 'user5@test.com', 'estandar')
 ```
 ---
 
