@@ -11,6 +11,19 @@ instalacion y uso:
    - npm install
    - npm run start
 
+---
+
+
+**Ejemplo de usuarios a probar:**
+```
+                ('Usuario 1', 'user1@test.com', 'administrador'),
+                ('Usuario 2', 'user2@test.com', 'estandar'),
+                ('Usuario 3', 'user3@test.com', 'estandar'),
+                ('Usuario 4', 'user4@test.com', 'estandar'),
+                ('Usuario 5', 'user5@test.com', 'estandar')
+```
+---
+
 la base de datos se crea sola en development/db.js
 
 endpoints principales:
@@ -28,6 +41,11 @@ cambiar motor de base de datos:
 - por defecto usa sqlite3
 - para otro motor, cambia development/db.js y los metodos en repositories/
 - instala el paquete del motor nuevo y ajusta la conexion
+
+**Documentacion nos ayudara a usar otras bases de datos**: https://expressjs.com/en/guide/database-integration.html
+
+
+
 # Adicional con ayuda de Draw.io y Extension "codevisualizer"
 
 *mer*
