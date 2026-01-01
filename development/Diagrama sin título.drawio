@@ -1,0 +1,19 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.0.3 Chrome/140.0.7339.249 Electron/38.7.0 Safari/537.36" version="29.0.3">
+  <diagram name="Página-1" id="mXWUaXJ-VhS44Uykz6dS">
+    <mxGraphModel dx="679" dy="409" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="z-g0jIv4Wk6SzZ3G3-Id-1" value="CREATE TABLE usuarios (&#xa;    id_usuario INTEGER PRIMARY KEY AUTOINCREMENT,&#xa;    nombre TEXT NOT NULL,&#xa;    email TEXT UNIQUE NOT NULL,&#xa;    rol TEXT NOT NULL CHECK (rol IN (&#39;administrador&#39;, &#39;estandar&#39;))&#xa;);&#xa;&#xa;&#xa;&#xa;CREATE TABLE tareas (&#xa;    id_tarea INTEGER PRIMARY KEY AUTOINCREMENT,&#xa;    titulo TEXT NOT NULL,&#xa;    descripcion TEXT,&#xa;    estado TEXT NOT NULL&#xa;        CHECK (estado IN (&#39;pendiente&#39;, &#39;en_progreso&#39;, &#39;completada&#39;)),&#xa;    prioridad TEXT NOT NULL&#xa;        CHECK (prioridad IN (&#39;baja&#39;, &#39;media&#39;, &#39;alta&#39;)),&#xa;    fecha_creacion DATETIME DEFAULT CURRENT_TIMESTAMP&#xa;);&#xa;&#xa;&#xa;CREATE TABLE tareas_usuarios (&#xa;    id_tarea INTEGER NOT NULL,&#xa;    id_usuario INTEGER NOT NULL,&#xa;    confirmado INTEGER NOT NULL DEFAULT 0&#xa;        CHECK (confirmado IN (0, 1)),&#xa;&#xa;    PRIMARY KEY (id_tarea, id_usuario),&#xa;&#xa;    FOREIGN KEY (id_tarea)&#xa;        REFERENCES tareas (id_tarea)&#xa;        ON DELETE CASCADE,&#xa;&#xa;    FOREIGN KEY (id_usuario)&#xa;        REFERENCES usuarios (id_usuario)&#xa;        ON DELETE CASCADE&#xa;);&#xa;" style="text;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="800" y="230" width="480" height="610" as="geometry" />
+        </mxCell>
+        <mxCell id="z-g0jIv4Wk6SzZ3G3-Id-2" value="tareas_usuarios" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="480" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="z-g0jIv4Wk6SzZ3G3-Id-3" value="tareas_usuarios" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="470" width="80" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
